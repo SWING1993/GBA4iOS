@@ -67,8 +67,8 @@ static GBAAppDelegate *_appDelegate;
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"showedWarningAlert"])
     {
         dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Welcome to GBA4iOS!", @"")
-                                                            message:NSLocalizedString(@"If at any time the app fails to open, please set the date back on your device at least 24 hours, then try opening the app again. Once the app is opened, you can set the date back to the correct time, and the app will continue to open normally. However, you'll need to repeat this process every time you restart your device.", @"")
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"哆啦科技工作室"
+                                                            message:@"欢迎使用GBA模拟器"
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
